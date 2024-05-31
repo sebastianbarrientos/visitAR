@@ -1,0 +1,135 @@
+/* Global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 10px 25px 10px 25px;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.header__title__box{
+    width: 50%;
+}
+
+.navbar{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    font-style: normal;
+}
+
+.navbar__link{
+    text-decoration: none;
+    color: black;
+}
+
+/* Hero */
+
+.hero_image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* About */
+
+.about{
+    display: flex;
+    padding: 15px;
+}
+
+.about__img__container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__img{
+    width: 60%;
+}
+
+.about__container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__content{
+    width: 450px;
+    padding: 10px;
+}
+
+.about__title{
+    margin-bottom: 10px;
+}
+
+/* Lugares */
+
+.places__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+}
+
+.places__img__container{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    border: solid green;
+}
+
+/* .places__img__container img{
+    width: 300px;
+    height: 200px;
+}
+ */
+/* Plan */
+
+.plan{
+    display: flex;
+    padding: 15px;
+}
+
+.plan__container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan__content{
+    width: 450px;
+    padding: 10px;
+}
+
+.plan__title{
+    margin-bottom: 10px;
+}
+
+.plan__img__container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan__img{
+    width: 60%;
+}
+
+/* Footer */
