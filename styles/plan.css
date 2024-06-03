@@ -1,0 +1,41 @@
+/* Global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 10px 100px 10px 100px;
+}
+
+.header__title__box{
+    width: 50%;
+}
+
+.navbar{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    font-style: normal;
+}
+
+.navbar__link{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 15px;
+    transition: color 0.3s ease, text-decoration 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar__link:hover{
+    background-color: #020b5a;
+    color: white;
+}
