@@ -27,9 +27,16 @@
 /* Header */
 
 .header {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+.header__box {
     display: flex;
     align-items: center;
-    margin: 10px 100px 10px 100px;
+    margin: 10px 100px 0px 100px;
 }
 
 .header__title__box{
@@ -102,7 +109,7 @@
 }
 
 .section__cont {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
 }
@@ -118,14 +125,7 @@
 
 /* About */
 
-.section__img__cont--about{
-    flex-direction: row-reverse;
-    margin-right: 30px;
-}
 
-.section__cont--about{
-    margin-left: 15px;
-}
 
 /* Lugares */
 
@@ -173,6 +173,10 @@
 
 .section__cont--plan{
     margin-right: 15px;
+}
+
+.section__img__cont--plan {
+    justify-content: flex-end;
 }
 
 /* Footer */
