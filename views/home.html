@@ -13,170 +13,30 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/32b8e6483f.js" crossorigin="anonymous"></script>
     <title>VisitAR • ¡Todo para tu próximo viaje por Argentina!</title>
-    <link rel="icon" href="https://cdn-icons-png.freepik.com/512/6211/6211268.png" type="image/x-icon">
+    <link rel="icon" href="https://eldiariodeviaje.com/wp-content/uploads/2024/06/travel.png" type="image/x-icon">
 </head>
 
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="header__box">
-            <div class="header__title__box">
-                <h1 class="header__title">VisitAR • Viaja por Argentina</h1>
-                <h5>Planificamos tu viaje soñado</h5>
+        <img class="header__img" src="../images/visit-argentina-logo.svg" alt="Visit Argentina Logo">
+        <nav class="header__nav">
+            <a class="header__link" href="">Home</a>
+            <a class="header__link" href="">Destinos</a>
+            <a class="header__link" href="">Actividades</a>
+            <a class="header__link" href="">Planea tu viaje</a>
+        </nav>
+        <div class="header__options">
+            <img class="header__profile" src="https://cdn-icons-png.flaticon.com/256/6522/6522516.png"
+                alt="Profile Pic">
+            <div class="header__lang">
+                <img class="header__lang-icon"
+                    src="https://judiciariesworldwide.fjc.gov/sites/default/files/styles/max_325x325/public/2024-10/spain-flag-round-icon-256.png?itok=Mk9al2Ba"
+                    alt="Lang Flag Icon">
+                <p class="header__lang-desc">ES</p>
             </div>
-            <nav class="navbar">
-                <a class="navbar__link" href="home.html">Home</a>
-                <a class="navbar__link" href="places.html">Destinos</a>
-                <a class="navbar__link" href="activities.html">Actividades</a>
-                <a class="navbar__link" href="plan.html">Planea tu viaje</a>
-            </nav>
         </div>
     </header>
-    <main class="main">
-        <!-- Hero Image -->
-        <section class="hero">
-            <h1 class="hero__title">Encuentra tu nuevo destino</h1>
-        </section>
-        <!-- About -->
-        <section class="section section--about">
-            <div class="section__img__cont section__img__cont--about">
-                <img class="section__img section__img--about" src="/images/home/cataratas-iguazu.jpg"
-                    alt="cataratas-iguazu">
-            </div>
-            <div class="section__cont section__cont--about">
-                <h2 class="section__title section__title--side">¿Por qué Argentina?</h2>
-                <p class="section__desc section__desc--about">Este hermoso país guarda misterios en cada rincón, listos
-                    para ser descubiertos. Argentina ofrece una experiencia única y una esencia auténtica que enamora.
-                    Desde los imponentes paisajes de la Patagonia hasta la cultura vibrante de Buenos Aires, te ofrecemos una variedad de destinos y actividades que
-                    satisfarán a todo tipo de viajeros.</p>
-            </div>
-        </section>
-        <!-- Destinos -->
-        <section class="section section--vertical">
-            <h2 class="section__title section__title--center">Destinos imperdibles</h2>
-            <div class="section__row">
-                <div class="section__row__cont">
-                    <img class="section__row__cont__img" src="/images/home/buenos-aires.jpg" alt="buenos-aires">
-                    <h3 class="section__row__cont__desc">Buenos Aires</h3>
-                </div>
-                <div class="section__row__cont">
-                    <img class="section__row__cont__img" src="/images/home/salta.jpg" alt="salta">
-                    <h3 class="section__row__cont__desc">Salta</h3>
-                </div>
-                <div class="section__row__cont">
-                    <img class="section__row__cont__img" src="/images/home/tierra-del-fuego-2.jpg"
-                        alt="tierra-del-fuego">
-                    <h3 class="section__row__cont__desc">Tierra del Fuego</h3>
-                </div>
-            </div>
-            <button type="submit" class="places__button button">Todos los destinos</button>
-        </section>
-        <!-- Actividades -->
-        <section class="section section--vertical">
-            <h2 class="section__title section__title--center">Las mejores actividades</h2>
-            <div class="section__row">
-                <div class="section__row__cont">
-                    <img class="section__row__cont__img section__row__cont__img--activities"
-                        src="/images/home/mate-cultura.jpg" alt="cultura">
-                    <h3 class="section__row__cont__desc">Cultura</h3>
-                </div>
-                <div class="section__row__cont">
-                    <img class="section__row__cont__img section__row__cont__img--activities"
-                        src="/images/home/noche.jpg" alt="noche">
-                    <h3 class="section__row__cont__desc">Noche</h3>
-                </div>
-                <div class="section__row__cont">
-                    <img class="section__row__cont__img section__row__cont__img--activities"
-                        src="/images/home/gastronomia.jpg" alt="gastronomia">
-                    <h3 class="section__row__cont__desc">Gastronomía</h3>
-                </div>
-            </div>
-            <div class="section__row">
-                <div class="section__row__cont">
-                    <img class="section__row__cont__img section__row__cont__img--activities"
-                        src="/images/home/playa.jpg" alt="playa">
-                    <h3 class="section__row__cont__desc">Playa</h3>
-                </div>
-                <div class="section__row__cont">
-                    <img class="section__row__cont__img section__row__cont__img--activities"
-                        src="/images/home/montanas.jpg" alt="montaña">
-                    <h3 class="section__row__cont__desc">Montaña</h3>
-                </div>
-                <div class="section__row__cont">
-                    <img class="section__row__cont__img section__row__cont__img--activities"
-                        src="/images/home/futbol-seleccion.jpg" alt="deportes">
-                    <h3 class="section__row__cont__desc">Deportes</h3>
-                </div>
-            </div>
-            <button type="submit" class="button">Ver las actividades</button>
-        </section>
-        <!-- Planea tu viaje -->
-        <section class="section section--plan">
-            <div class="section__cont section__cont--plan">
-                <div class="section__cont__text">
-                    <h2 class="section__title section__title--side">Planeamos tu viaje</h2>
-                    <p class="section__desc">Nuestro equipo de expertos en turismo está aquí para hacer realidad tus
-                        sueños de explorar este asombroso país y garantizar que cada detalle de tu aventura esté
-                        cuidadosamente diseñado y organizado. Nuestro objetivo es brindarte un viaje personalizado y a
-                        medida que refleje tus pasiones y deseos. La planificación de tu viaje también incluirá la
-                        selección de alojamientos de calidad, opciones de transporte seguras y cómodas, y la
-                        coordinación de actividades y excursiones emocionantes.</p>
-                </div>
-                <button type="submit" class="button--plan button">Planea tu viaje</button>
-            </div>
-            <div class="section__img__cont section__img__cont--plan">
-                <img class="section__img" src="/images/home/la-boca.jpg" alt="la-boca">
-            </div>
-        </section>
-    </main>
-    <!-- Footer -->
-    <footer class="footer">
-        <section class="footer__main">
-            <div class="link__section">
-                <h3 class="footer__title">VisitAR</h3>
-                <div class="sitemap">
-                    <a class="sitemap_item" href="home.html">Home</a>
-                    <a class="sitemap_item" href="places.html">Destinos</a>
-                    <a class="sitemap_item" href="activities.html">Nuestras actividades</a>
-                    <a class="sitemap_item" href="plan.html">Planeamos tu viaje</a>
-                </div>
-                <div class="link_box">
-                    <img class="link_box_img"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png"
-                        alt="instagram">
-                    <img class="link_box_img" src="https://cdn-icons-png.freepik.com/512/124/124021.png" alt="twitter">
-                    <img class="link_box_img"
-                        src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="facebook">
-                    <img class="link_box_img"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/479px-WhatsApp_icon.png"
-                        alt="tel-number">
-                </div>
-            </div>
-            <div class="contact__section">
-                <h4 class="contact__title">Estemos en contacto</h4>
-                <div class="contact__email__section">
-                    <input class="contact__email__input" type="email" name="email" id="email"
-                        placeholder="Tu email aquí...">
-                    <button class="button">¡Subscríbete!</button>
-                </div>
-                <div class="contact__check">
-                    <input type="checkbox" name="accept" id="accept">
-                    <p class="contact__check__desc">Acepto que soy mayor de dieciséis (16) años de edad</p>
-                </div>
-            </div>
-        </section>
-        <section class="footer__end">
-            <p class="footer__end__txt">
-                <a href="" class="footer__end__link">Términos y condiciones</a> │
-                <a href="" class="footer__end__link">Política de privacidad</a> │
-                <a href="" class="footer__end__link">Misión</a> │
-                <a href="" class="footer__end__link">Trabaja con nosotros</a> │
-                <a href="" class="footer__end__link">Reembolsos</a>
-            </p>
-            <hr class="footer__end__divider">
-            <p class="footer__copyright">Copyright © 2024 VisitAR. Todos los derechos reservados.</p>
-        </section>
-    </footer>
 </body>
 
 </html>
