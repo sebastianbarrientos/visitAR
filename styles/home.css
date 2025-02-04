@@ -19,6 +19,7 @@
     padding: 1em;
     font-size: 1.2em;
     transition: color 0.5s, background-color 0.5s, border 0.5s;
+    display: block;
 }
 
 .button:hover {
@@ -39,6 +40,7 @@ header {
 .header__img {
     height: 100%;
     width: 15%;
+    cursor: pointer;
 }
 
 .header__nav {
@@ -262,4 +264,73 @@ header {
 .advert__box-btn:hover {
     background-color: white;
     color: var(--light-blue);
+}
+
+/* Planning */
+
+.plan {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+.plan__form-title {
+    font-size: 2.7em;
+}
+
+.plan__form-title span {
+    color: var(--light-blue);
+}
+
+.plan__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    /* border: 1px solid; */
+}
+
+.plan__form-label {
+    font-size: 1em;
+}
+
+.plan__form-date {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.input {
+    padding: 0.5em;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.plan__form-geo, .plan__form-hotel {
+    width: 90%;
+}
+
+.plan__img {
+    width: 50%;
+    border-radius: 2em;
+}
+
+.plan__form-search-btn {
+    width: 25%;
+    align-self: center;
+}
+
+.plan__form-start {
+    width: 45%;
+}
+
+.plan__form-label {
+    font-size: 1em;
+}
+
+.plan__form-hotel {
+    width: 90%;
 }

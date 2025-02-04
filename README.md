@@ -6,6 +6,7 @@
 * Contiene elementos de Bootstrap (Dropdown, Carousel, Modal)
 
 ## Versión 1.1
+* CSS optimizado
 * Contiene una animación y una transición
 * Contiene un evento de JavaScript
 * Debe ser responsive
