@@ -10,4 +10,4 @@
 * Contiene un evento de JavaScript
 * Debe ser responsive
 
-https://www.figma.com/design/uaTzOW4rPVCkjZRoL7fQCL/VisitAR?node-id=0-1&t=a4j3xhjfhmQLHCYv-0
+https://www.figma.com/design/uaTzOW4rPVCkjZRoL7fQCL/VisitAR?node-id=450-2&p=f&t=jqZDYwXPMsfl3Ohp-0
