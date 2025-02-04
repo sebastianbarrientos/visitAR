@@ -334,3 +334,46 @@ header {
 .plan__form-hotel {
     width: 90%;
 }
+
+/* Footer */
+
+.footer {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    background-color: var(--dark-blue);
+}
+
+.footer__main {
+    display: flex;
+    color: white;
+    margin-bottom: 5%;
+}
+
+.footer__section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    width: 25%;
+
+}
+
+.footer__section-item {
+    text-decoration: none;
+    color: white;
+}
+
+.footer__soc-icon {
+    width: 1.5em;
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.footer__copyright p{
+    margin-top: 2em;
+    margin-bottom: 0;
+}

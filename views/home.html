@@ -138,29 +138,79 @@
     </div>
     <!-- Planning -->
     <div class="plan">
-        <div class="plan__form">
-          <h2 class="plan__form-title">Te <span>ayudamos</span> a planear tu próximo viaje</h2>
-          <input type="text" class="plan__form-geo input" placeholder="Busca ciudades, provincias, regiones...">
-          <div class="plan__form-date">
-            <div class="plan__form-start">
-              <h3 class="plan__form-label">Fecha de ida</h3>
-              <input type="date" name="start" id="start" class="input">
-            </div>
-            <div class="plan__form-start">
-              <h3 class="plan__form-label">Fecha de ida</h3>
-              <input type="date" name="start" id="start" class="input">
-            </div>
+      <div class="plan__form">
+        <h2 class="plan__form-title">Te <span>ayudamos</span> a planear tu próximo viaje</h2>
+        <input type="text" class="plan__form-geo input" placeholder="Busca ciudades, provincias, regiones...">
+        <div class="plan__form-date">
+          <div class="plan__form-start">
+            <h3 class="plan__form-label">Fecha de ida</h3>
+            <input type="date" name="start" id="start" class="input">
           </div>
-          <div class="plan__form-hotel">
-            <select name="hotel" id="hotel" class="input">
-              <option value="hotel">Hotel</option>
-              <option value="hostel">Hostel</option>
-              <option value="shared">Alojamiento compartido</option>
-            </select>
+          <div class="plan__form-start">
+            <h3 class="plan__form-label">Fecha de ida</h3>
+            <input type="date" name="start" id="start" class="input">
           </div>
-          <button class="plan__form-search-btn button">Buscar</button>
         </div>
-        <img src="../images/sign.jpg" alt="Señal" class="plan__img">
+        <div class="plan__form-hotel">
+          <select name="hotel" id="hotel" class="input">
+            <option value="select">Tipo de alojamiento</option>
+            <option value="hotel">Hotel</option>
+            <option value="hostel">Hostel</option>
+            <option value="shared">Alojamiento compartido</option>
+          </select>
+        </div>
+        <button class="plan__form-search-btn button">Buscar</button>
+      </div>
+      <img src="../images/sign.jpg" alt="Señal" class="plan__img">
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer__main">
+        <div class="footer__section">
+          <h4 class="footer__section-title">Sobre este sitio</h4>
+          <a class="footer__section-item">Política de Privacidad</a>
+          <a class="footer__section-item">Cookies</a>
+          <a class="footer__section-item">Declaración de Accesibilidad</a>
+          <a class="footer__section-item">Términos de uso</a>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__section-title">Nuestras páginas web</h4>
+          <a class="footer__section-item">Home</a>
+          <a class="footer__section-item">Destinos</a>
+          <a class="footer__section-item">Actividades</a>
+          <a class="footer__section-item">Planea tu viaje</a>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__section-title">Redes sociales</h4>
+          <div>
+            <img class="footer__soc-icon" src="../images/ig-icon.png" alt="">
+            <a class="footer__section-item">Instagram</a>
+          </div>
+          <div>
+            <img class="footer__soc-icon" src="../images/Facebook_icon.svg" alt="">
+            <a class="footer__section-item">Facebook</a>
+          </div>
+          <div>
+            <img class="footer__soc-icon" src="../images/x-icon.png" alt="">
+            <a class="footer__section-item">Twitter</a>
+          </div>
+          <div>
+            <img class="footer__soc-icon" src="../images/yt-icon.png" alt="">
+            <a class="footer__section-item">YouTube</a>
+          </div>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__section-title">Seleccionar idiomas</h4>
+          <select name="language" id="language" class="input">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            <option value="fr">François</option>
+          </select>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>Copyright 2025 - Todos los derechos reservados VisitAR</p>
+      </div>
     </div>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
