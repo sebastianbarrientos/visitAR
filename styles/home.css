@@ -144,7 +144,7 @@ header {
 
 .about__img {
     width: 40%;
-    border-radius: 15%;
+    border-radius: 2em;
     object-fit: cover;
 }
 
