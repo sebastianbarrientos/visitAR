@@ -6,9 +6,9 @@
 * Contiene elementos de Bootstrap (Dropdown, Carousel, Modal)
 
 ## Versión 1.1
-* CSS optimizado
-* Contiene una animación y una transición
 * Contiene un evento de JavaScript
+* Contiene una transición
 * Debe ser responsive
+* CSS optimizado
 
 https://www.figma.com/design/uaTzOW4rPVCkjZRoL7fQCL/VisitAR?node-id=450-2&p=f&t=jqZDYwXPMsfl3Ohp-0
