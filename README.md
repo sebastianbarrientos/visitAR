@@ -3,12 +3,11 @@
 ## MVP
 * Página web estática maquetada y estilada con HTML y CSS (método BEM)
 * Diseñada en Figma
-* Contiene elementos de Bootstrap (Dropdown, Carousel, Modal)
+* Contiene elementos de Bootstrap
 
 ## Versión 1.1
-* CSS optimizado
-* Contiene una animación y una transición
 * Contiene un evento de JavaScript
-* Debe ser responsive
+* Contiene una transición
+* Usa variables de CSS
 
 https://www.figma.com/design/uaTzOW4rPVCkjZRoL7fQCL/VisitAR?node-id=450-2&p=f&t=jqZDYwXPMsfl3Ohp-0
