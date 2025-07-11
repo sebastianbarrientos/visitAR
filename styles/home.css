@@ -28,6 +28,14 @@
     background-color: white;
 }
 
+.no-select {
+  user-select: none;
+  /* Para compatibilidad con navegadores antiguos: */
+  -webkit-user-select: none; /* Chrome, Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
+}
+
 #arrow-up-btn {
     position: fixed;
     bottom: 1.5em;
@@ -49,26 +57,17 @@
 
 /* Header */
 
-/* Mobile & Tablet */
-@media (max-width: 768px) {
-    
-}
-
-/* Laptop */
-@media (max-width: 1024px) {
-
-}
-
-/* Desktop */
-@media (max-width: 1440px) {
-
-}
-
 header {
-    height: 10vh;
-    margin-left: 7%;
-    margin-right: 7%;
+    height: 70px;
+    padding-left: 7%;
+    padding-right: 7%;
     display: flex;
+    width: 100vw;
+    z-index: 1000;
+    position: fixed;   /* fija el div en la pantalla */
+    top: 0;            /* lo posiciona en la parte superior */
+    left: 0;           /* para que empiece en el borde izquierdo */
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .header__img {
@@ -121,6 +120,7 @@ header {
     flex-direction: column;
     align-items: center;
     height: 80%;
+    cursor: pointer;
 }
 
 .header__lang-icon {
@@ -134,7 +134,8 @@ header {
 /* Hero */
 
 .hero {
-    height: 90vh;
+    height: 625px;
+    margin-top: 70px;
 }
 
 .carousel,
@@ -431,6 +432,11 @@ header {
 .footer__section-item {
     text-decoration: none;
     color: white;
+    cursor: pointer;
+}
+
+.footer-social {
+    cursor: pointer;
 }
 
 .footer__soc-icon {
