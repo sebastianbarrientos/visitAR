@@ -30,7 +30,7 @@
 
 .no-select {
   user-select: none;
-  /* Para compatibilidad con navegadores antiguos: */
+  /* Para compatibilidad con navegadores antiguos */
   -webkit-user-select: none; /* Chrome, Safari */
   -moz-user-select: none;    /* Firefox */
   -ms-user-select: none;     /* Internet Explorer/Edge */
@@ -64,9 +64,9 @@ header {
     display: flex;
     width: 100vw;
     z-index: 1000;
-    position: fixed;   /* fija el div en la pantalla */
-    top: 0;            /* lo posiciona en la parte superior */
-    left: 0;           /* para que empiece en el borde izquierdo */
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
