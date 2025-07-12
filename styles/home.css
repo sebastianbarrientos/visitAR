@@ -36,6 +36,10 @@
   -ms-user-select: none;     /* Internet Explorer/Edge */
 }
 
+img {
+    -webkit-user-drag: none;
+}
+
 #arrow-up-btn {
     position: fixed;
     bottom: 1.5em;
@@ -134,8 +138,8 @@ header {
 /* Hero */
 
 .hero {
-    height: 625px;
-    margin-top: 70px;
+    height: 695px;
+    /* margin-top: 70px; */
 }
 
 .carousel,
@@ -378,6 +382,124 @@ header {
     width: 90%;
 }
 
+/* Testiomonials */
+
+.testimonials {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonials__title {
+    font-size: 2.7em;
+}
+
+.testimonials__title span {
+    color: var(--light-blue);
+}
+
+.testimonials__box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 3%;
+}
+
+.testimonial__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+}
+
+.testimonial__item-img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+
+.testimonial__item-img img {
+    width: 450px;
+    height: 350px;
+    border-radius: 2em;
+}
+
+.testimonial__item-desc {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Pricing */
+
+.pricing {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing__title {
+    font-size: 2.7em;
+}
+
+.pricing__title span {
+    color: var(--light-blue);
+}
+
+.pricing__item-box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 3%;
+}
+
+.pricing__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 0.5em;
+    border-radius: 2em;
+    width: 30%;
+}
+
+.pricing__item-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.pricing__btn {
+    margin-top: 3%;
+    padding: 0.7em;
+}
+
+.pricing-tag span {
+    text-decoration: line-through;
+    color: rgba(128, 128, 128, 0.8);
+}
+
+.pricing-tag__exp { 
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.pricing-list li {
+    font-size: 0.8em;
+}
+
 /* Newsletter */
 
 .news {
@@ -435,12 +557,9 @@ header {
     cursor: pointer;
 }
 
-.footer-social {
-    cursor: pointer;
-}
-
 .footer__soc-icon {
     width: 1.5em;
+    cursor: pointer;
 }
 
 .footer__copyright {
