@@ -1,13 +1,12 @@
-# VisitAR
+# Landing Page de viajes 🌎✈️
 
-## MVP
-* Página web estática maquetada y estilada con HTML y CSS (método BEM)
-* Diseñada en Figma
-* Contiene elementos de Bootstrap
+Es un página web estática sobre una empresa de viajes ficticia que ofrece viajes y paquetes turísticos por Argentina.
 
-## Versión 1.1
-* Contiene un evento de JavaScript
-* Contiene una transición
-* Usa variables de CSS
+Contiene planes de viaje, actividades, testimonios, sección de pagos y una interfaz bilingüe (Español/Inglés).
 
-https://www.figma.com/design/uaTzOW4rPVCkjZRoL7fQCL/VisitAR?node-id=450-2&p=f&t=jqZDYwXPMsfl3Ohp-0
+## Tecnologías usadas
+
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap
