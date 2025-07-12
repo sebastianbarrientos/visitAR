@@ -17,17 +17,17 @@ function changeLanguage(select) {
     console.log("Idioma seleccionado:", selectedFile);
 
     if (selectedFile == "en") {
-        window.location.href = "./home_en.html";
+        window.location.href = "./english.html";
     } else if (selectedFile == "es") {
-        window.location.href = "./home.html";
+        window.location.href = "./index.html";
     }
   }
 
 
 function toggleLanguage(language) {
     if (language == "en") {
-        window.location.href = "./home_en.html";
+        window.location.href = "./english.html";
     } else if (language == "es") {
-        window.location.href = "./home.html";
+        window.location.href = "./index.html";
     }
   }
