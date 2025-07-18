@@ -33,15 +33,24 @@
         <a class="header__link" href="#">Plan your trip</a>
       </div>
       <div class="header__options">
-        <div class="header__profile">
+        <div class="header__profile" data-bs-toggle="modal" data-bs-target="#profileModal">
           <img src="./images/icons/profile-icon.png" alt="Profile Pic">
         </div>
-        <div class="header__lang" onclick="toggleLanguage('es')">
-          <img class="header__lang-icon" src="./images/icons/uk-flag-icon.png" alt="Lang Flag Icon">
+        <div class="header__lang dropdown">
+          <img class="header__lang-icon dropdown-toggle" src="./images/icons/uk-flag-icon.png" alt="Lang Flag Icon" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" role="button">
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item switch-spanish" id="switch-spanish">Español</a></li>
+            <li><a class="dropdown-item" href="#">English</a></li>
+          </ul>
         </div>
       </div>
     </nav>
-    <p class="menu-icon"><i class="fa-solid fa-bars"></i></p>
+    <p class="menu-icon dropdown-toggle" id="dropdownMenuButtonMobile" data-bs-toggle="dropdown" aria-expanded="false" role="button"><i class="fa-solid fa-bars"></i></p>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonMobile">
+      <li><a class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#profileModal">Your Account</a></li>
+      <li><a class="dropdown-item" id="switch-spanish-mobile">Español</a></li>
+      <li><a class="dropdown-item" href="#">English</a></li>
+    </ul>
   </header>
   <main class="main">
     <!-- Hero -->
@@ -58,7 +67,6 @@
             <div class="carousel-caption c-caption">
               <div class="c-caption__title no-select">
                 <h1>Find your desired destination</h1>
-                <p>Haceme caso dale no seas buto</p>
               </div>
             </div>
             <img src="./images/puerto-madryn.webp" class="d-block w-100 c-img" alt="Puerto Madryn">
@@ -67,7 +75,6 @@
             <div class="carousel-caption c-caption">
               <div class="c-caption__title no-select">
                 <h1>Explore without limits or borders</h1>
-                <p>Haceme caso dale no seas buto</p>
               </div>
             </div>
             <img src="./images/nueve-julio.webp" class="d-block w-100 c-img" alt="Av Nueve de Julio">
@@ -76,16 +83,14 @@
             <div class="carousel-caption c-caption">
               <div class="c-caption__title no-select">
                 <h1>Step into nature</h1>
-                <p>Haceme caso dale no seas buto</p>
               </div>
             </div>
             <img src="./images/montanas.webp" class="d-block w-100 c-img" alt="Montañas">
           </div>
           <div class="carousel-item">
             <div class="carousel-caption c-caption">
-              <div class="c-caption__title no-select">
+              <div class="c-caption__title no-select">  
                 <h1>Your next adventure begins today</h1>
-                <p>Haceme caso dale no seas buto</p>
               </div>
             </div>
             <img src="./images/fitz-roy.webp" class="d-block w-100 c-img" alt="Fitz Roy">
@@ -102,15 +107,15 @@
       </div>
     </div>
     <!-- About -->
-    <div class="about">
+    <!-- <div class="about">
       <img src="./images/aconcagua.webp" class="about__img" alt="Aconcagua">
       <div class="about__content">
         <h2 class="about__content-title">¿Why <span>Argentina</span>?</h2>
         <p class="about__content-desc">Discover Argentina, a land of breathtaking landscapes and vibrant culture. From the majesty of Patagonia to the energy of Buenos Aires, every corner offers an unforgettable experience. Explore the glaciers, savor an authentic asado, and experience tango in its birthplace. Argentina is a perfect destination for lovers of nature, cuisine, and history.</p>
       </div>
-    </div>
+    </div> -->
     <!-- Featured -->
-    <div class="feat">
+    <!-- <div class="feat">
       <h2 class="feat__title">Must-see <span>destinations</span></h2>
       <div class="feat__item-box">
         <div class="feat__item">
@@ -139,9 +144,9 @@
         </div>
       </div>
       <button class="button feat__btn">All destinations</button>
-    </div>
+    </div> -->
     <!-- Activities -->
-    <div class="feat">
+    <!-- <div class="feat">
       <h2 class="feat__title">Our <span>proposals</span> for your unforgettable trip</h2>
       <div class="feat__item-box">
         <div class="feat__item">
@@ -188,8 +193,43 @@
         </div>
       </div>
       <button class="button feat__btn">All activities</button>
-    </div>
+    </div> -->
   </main>
+
+  <!-- Modal -->
+  <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="profileModalLabel">Your account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Contenido del modal -->
+          <form class="form-container">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="youraddress@example.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Your Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember me</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Log In</button>
+          <!-- Podés agregar más botones si querés -->
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../index.js"></script>
 </body>

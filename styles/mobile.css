@@ -6,8 +6,9 @@
 }
 
 :root {
-    --light-blue: #2DAFFF;
-    --dark-blue: #020B5A;
+    --light-blue: #276FBF;
+    --dark-blue: #133473;
+    --darker-blue: #1F2041;
 }
 
 body {
@@ -178,7 +179,10 @@ img {
 @media (max-width: 768px) {
 
     .header {
+        position: relative;
+        justify-content: center;
         align-items: center;
+        border: 1px solid black;
     }
 
     .header__nav {
@@ -191,8 +195,10 @@ img {
 
     .menu-icon {
         display: inline-block;
-        font-size: 2em;
+        font-size: 1.5em;
         cursor: pointer;
+        position: absolute;
+        right: 50px;
     }
 
 }
@@ -203,6 +209,12 @@ img {
         width: 40%;
     }
 
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 /* Hero */

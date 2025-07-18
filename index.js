@@ -1,3 +1,10 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+        new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+});
+
 const goUpBtn = document.getElementById("arrow-up-btn");
 
 window.onscroll = function () {
@@ -30,4 +37,14 @@ function toggleLanguage(language) {
     } else if (language == "es") {
         window.location.href = "./es.html";
     }
-  }
+}
+
+const switchSpanish = document.getElementById("switch-spanish");
+const switchSpanishMobile = document.getElementById("switch-spanish-mobile");
+
+switchSpanish.addEventListener("click", e => {
+    window.location.href = "./es.html";
+})
+switchSpanishMobile.addEventListener("click", e => {
+    window.location.href = "./es.html";
+})
