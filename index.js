@@ -26,8 +26,8 @@ function changeLanguage(select) {
 
 function toggleLanguage(language) {
     if (language == "en") {
-        window.location.href = "./english.html";
-    } else if (language == "es") {
         window.location.href = "./index.html";
+    } else if (language == "es") {
+        window.location.href = "./es.html";
     }
   }

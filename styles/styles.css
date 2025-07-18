@@ -52,6 +52,7 @@ img {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    z-index: 50;
 }
 
 #arrow-up-btn.show {
@@ -414,23 +415,19 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 30%;
+    width: 25%;
 }
-
-.testimonial__item-img {
-    width: 100%;
-    height: 90%;
-    object-fit: cover;
-}
-
 
 .testimonial__item-img img {
-    width: 450px;
-    height: 350px;
+    width: 100%;
     border-radius: 2em;
 }
 
 .testimonial__item-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     font-size: 1em;
     margin: 0;
 }
@@ -508,17 +505,44 @@ header {
 /* Newsletter */
 
 .news {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1em;
-    background-image: url("../images/puerto-madryn.webp");
-    background-position: left center;
+    justify-content: center; /* centra verticalmente */
+    height: 300px; /* altura visible */
+    overflow: hidden;
+    padding: 1em;
     color: white;
+}
+
+.news-bkg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none; /* no bloquea clicks */
+}
+
+.news-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5em;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.contrast {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0.2em;
+    border-radius: 1em;
 }
 
 .news__logo {
