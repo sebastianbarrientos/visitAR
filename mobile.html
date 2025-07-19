@@ -23,7 +23,7 @@
   <!-- Header -->
   <header class="header">
     <a href="#" class="header__img-link">
-      <img class="header__img" src="./images/visit-argentina-logo.svg" alt="Visit Argentina Logo">
+      <img class="header__img" src="./images/icons/visit-argentina-logo.svg" alt="Visit Argentina Logo">
     </a>
     <nav class="header__nav">
       <div class="header__link-container">
@@ -33,23 +33,31 @@
         <a class="header__link" href="#">Plan your trip</a>
       </div>
       <div class="header__options">
-        <div class="header__profile" data-bs-toggle="modal" data-bs-target="#profileModal">
+        <div class="header__profile" id="dropdownMenuProfile" data-bs-toggle="dropdown" aria-expanded="false" role="button">
           <img src="./images/icons/profile-icon.png" alt="Profile Pic">
         </div>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuProfile">
+          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a></li>
+        </ul>
         <div class="header__lang dropdown">
-          <img class="header__lang-icon dropdown-toggle" src="./images/icons/uk-flag-icon.png" alt="Lang Flag Icon" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" role="button">
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item switch-spanish" id="switch-spanish">Español</a></li>
-            <li><a class="dropdown-item" href="#">English</a></li>
+          <img class="header__lang-icon" src="./images/icons/settings.svg" alt="Settings Icon" id="dropdownMenuSettings" data-bs-toggle="dropdown" aria-expanded="false" role="button">
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuSettings">
+            <li><a class="dropdown-item" href="#" onclick="toggleCurrency()">Change Currency</a></li>
+            <li><a class="dropdown-item" href="#" onclick="toggleTheme()">Toggle Theme</a></li>
+            <li><a class="dropdown-item" href="#" onclick="toggleLanguage('es')">Español</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <p class="menu-icon dropdown-toggle" id="dropdownMenuButtonMobile" data-bs-toggle="dropdown" aria-expanded="false" role="button"><i class="fa-solid fa-bars"></i></p>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonMobile">
-      <li><a class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#profileModal">Your Account</a></li>
-      <li><a class="dropdown-item" id="switch-spanish-mobile">Español</a></li>
-      <li><a class="dropdown-item" href="#">English</a></li>
+    <p class="menu-icon" id="dropdownMenuMobile" data-bs-toggle="dropdown" aria-expanded="false" role="button"><i class="fa-solid fa-gear"></i></i></p>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuMobile">
+      <li><a class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+      <li><a class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#registerModal">Register</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#" onclick="toggleCurrency()">Change Currency</a></li>
+      <li><a class="dropdown-item" href="#" onclick="toggleTheme()">Toggle Theme</a></li>
+      <li><a class="dropdown-item" href="#" onclick="toggleLanguage('es')">Español</a></li>
     </ul>
   </header>
   <main class="main">
@@ -106,125 +114,223 @@
         </button>
       </div>
     </div>
-    <!-- About -->
-    <!-- <div class="about">
-      <img src="./images/aconcagua.webp" class="about__img" alt="Aconcagua">
-      <div class="about__content">
-        <h2 class="about__content-title">¿Why <span>Argentina</span>?</h2>
-        <p class="about__content-desc">Discover Argentina, a land of breathtaking landscapes and vibrant culture. From the majesty of Patagonia to the energy of Buenos Aires, every corner offers an unforgettable experience. Explore the glaciers, savor an authentic asado, and experience tango in its birthplace. Argentina is a perfect destination for lovers of nature, cuisine, and history.</p>
+    <!-- Feature 1 -->
+    <div class="feat reverse">
+      <img src="./images/sign.webp" class="feat__img" alt="Sign">
+      <div class="feat__content">
+        <h2 class="feat__content-title">An <span>experience</span> tailored to you</h2>
+        <p class="feat__content-desc">Travel your way, with curated experiences designed to match your style. Whether you’re seeking adventure, relaxation, or culture, we help you build a trip that reflects who you are — from boutique stays to off-the-beaten-path adventures.</p>
       </div>
-    </div> -->
-    <!-- Featured -->
-    <!-- <div class="feat">
-      <h2 class="feat__title">Must-see <span>destinations</span></h2>
-      <div class="feat__item-box">
-        <div class="feat__item">
-          <div class="feat__item-img">
+    </div>
+    <!-- Feature 2 -->
+    <div class="feat">
+      <div class="feat__content">
+        <h2 class="feat__content-title">Plan your trip in 3 <span>simple</span> steps</h2>
+        <p class="feat__content-desc">Planning your journey has never been easier. Choose your destination, select your favorite experiences, and let us take care of the rest. In just a few clicks, you’ll have your dream trip ready — stress-free and customized.</p>
+      </div>
+      <img src="./images/misiones.webp" class="feat__img" alt="Misiones">
+    </div>
+    <!-- About -->
+    <div class="feat reverse">
+      <img src="./images/aconcagua.webp" class="feat__img" alt="Aconcagua">
+      <div class="feat__content">
+        <h2 class="feat__content-title">Discover <span>Argentina</span></h2>
+        <p class="feat__content-desc">A land of breathtaking landscapes and vibrant culture. From the majesty of Patagonia to the energy of Buenos Aires, every corner offers an unforgettable experience. Explore the glaciers, savor an authentic asado, and experience tango in its birthplace.</p>
+      </div>
+    </div>
+    <!-- Logos -->
+    <div class="logos">
+      <div class="logos-slide">
+        <img src="./images/icons/airbnb-logo.webp" alt="Airbnb">
+        <img src="./images/icons/tripadvisor-logo.png" alt="TripAdvisor">
+        <img src="./images/icons/citi-logo.webp" alt="Citi">
+        <img src="./images/icons/delta-airlines-logo.webp" alt="Delta Airlines">
+        <img src="./images/icons/google-logo.png" alt="Google">
+        <img src="./images/icons/american-airlines-logo.png" alt="American Airlines">
+        <img src="./images/icons/visa-logo.webp" alt="Visa">
+        <img src="./images/icons/amazon-logo.png" alt="Amazon">
+        <img src="./images/icons/forbes-logo.png" alt="Forbes">
+      </div>
+      <div class="logos-slide">
+        <img src="./images/icons/airbnb-logo.webp" alt="Airbnb">
+        <img src="./images/icons/tripadvisor-logo.png" alt="TripAdvisor">
+        <img src="./images/icons/citi-logo.webp" alt="Citi">
+        <img src="./images/icons/delta-airlines-logo.webp" alt="Delta Airlines">
+        <img src="./images/icons/google-logo.png" alt="Google">
+        <img src="./images/icons/american-airlines-logo.png" alt="American Airlines">
+        <img src="./images/icons/visa-logo.webp" alt="Visa">
+        <img src="./images/icons/amazon-logo.png" alt="Amazon">
+        <img src="./images/icons/forbes-logo.png" alt="Forbes">
+      </div>
+    </div>
+    <!-- Metrics -->
+    <div class="metric">
+      <div class="metric__box box1">
+        <h2 class="metric__title">95% of clients</h2>
+        <p class="metric__subtitle">satisfied with our service</p>
+      </div>
+      <div class="metric__box box2">
+        <h2 class="metric__title">+10,000 trips</h2>
+        <p class="metric__subtitle">successfully organized</p>
+      </div>
+      <div class="metric__box box3">
+        <h2 class="metric__title">+50 places</h2>
+        <p class="metric__subtitle">ready to captivate you</p>
+      </div>
+    </div>
+    <!-- Destinations -->
+    <div class="destination">
+      <h2 class="destination__title">Must-see <span>destinations</span></h2>
+      <div class="destination__item-box">
+        <div class="destination__item">
+          <div class="destination__item-img">
             <img src="./images/teatro-colon.webp" alt="Buenos Aires Teatro Colon">
           </div>
-          <div class="feat__item-desc">
-            <p class="feat__item-desc">Buenos Aires</p>
+          <div class="destination__item-desc">
+            <p class="destination__item-desc">Buenos Aires</p>
           </div>
         </div>
-        <div class="feat__item">
-          <div class="feat__item-img">
+        <div class="destination__item">
+          <div class="destination__item-img">
             <img src="./images/salta.webp" alt="Salta">
           </div>
-          <div class="feat__item-desc">
-            <p class="feat__item-desc">Salta</p>
+          <div class="destination__item-desc">
+            <p class="destination__item-desc">Salta</p>
           </div>
         </div>
-        <div class="feat__item">
-          <div class="feat__item-img">
+        <div class="destination__item">
+          <div class="destination__item-img">
             <img src="./images/tierra-del-fuego-2.webp" alt="Tierra del Fuego">
           </div>
-          <div class="feat__item-desc">
-            <p class="feat__item-desc">Tierra del Fuego</p>
+          <div class="destination__item-desc">
+            <p class="destination__item-desc">Tierra del Fuego</p>
           </div>
         </div>
       </div>
-      <button class="button feat__btn">All destinations</button>
-    </div> -->
+      <button class="button destination__btn">All destinations</button>
+    </div>
     <!-- Activities -->
-    <!-- <div class="feat">
-      <h2 class="feat__title">Our <span>proposals</span> for your unforgettable trip</h2>
-      <div class="feat__item-box">
-        <div class="feat__item">
-          <div class="feat__item-img">
+    <div class="destination">
+      <h2 class="destination__title">Our <span>proposals</span> for your unforgettable trip</h2>
+      <div class="destination__item-box">
+        <div class="destination__item">
+          <div class="destination__item-img">
             <img src="./images/fitz-roy-trekking.webp" alt="Trekking en El Chaltén">
           </div>
-          <div class="feat__item-desc">
-            <p class="feat__item-desc">Trekking in El Chaltén</p>
+          <div class="destination__item-desc">
+            <p class="destination__item-desc">Trekking in El Chaltén</p>
           </div>
         </div>
-        <div class="feat__item">
-          <div class="feat__item-img">
+        <div class="destination__item">
+          <div class="destination__item-img">
             <img src="./images/chubut-ballenas-2.webp" alt="Avistaje de ballenas en Chubut">
           </div>
-          <div class="feat__item-desc">
-            <p class="feat__item-desc">Whale watching in Chubut</p>
+          <div class="destination__item-desc">
+            <p class="destination__item-desc">Whale watching in Chubut</p>
           </div>
         </div>
-        <div class="feat__item">
-          <div class="feat__item-img">
+        <div class="destination__item">
+          <div class="destination__item-img">
             <img src="./images/buenos-aires-cafe.webp" alt="Tour de cafes notables">
           </div>
-          <div class="feat__item-desc">
-            <p class="feat__item-desc">Notable cafés tour</p>
+          <div class="destination__item-desc">
+            <p class="destination__item-desc">Notable cafés tour</p>
           </div>
         </div>
       </div>
-      <div class="feat__item-box">
-        <div class="feat__item">
-          <div class="feat__item-img">
+      <div class="destination__item-box">
+        <div class="destination__item">
+          <div class="destination__item-img">
             <img src="./images/mendoza-vino.webp" alt="Ruta del vino en Mendoza">
           </div>
-          <div class="feat__item-desc">
-            <p class="feat__item-desc">Wine route in Mendoza</p>
+          <div class="destination__item-desc">
+            <p class="destination__item-desc">Wine route in Mendoza</p>
           </div>
         </div>
-        <div class="feat__item">
-          <div class="feat__item-img">
+        <div class="destination__item">
+          <div class="destination__item-img">
             <img src="./images/quebrada-de-humahuaca.webp" alt="Excursión por Salinas Grandes">
           </div>
-          <div class="feat__item-desc">
-            <p class="feat__item-desc">Excursion to Salinas Grandes (Jujuy)</p>
+          <div class="destination__item-desc">
+            <p class="destination__item-desc">Excursion to Salinas Grandes (Jujuy)</p>
           </div>
         </div>
       </div>
-      <button class="button feat__btn">All activities</button>
-    </div> -->
+      <button class="button destination__btn">All activities</button>
+    </div>
+
+    <!-- Advert -->
+    <!-- Plan -->
+    <!-- Testimonials -->
+    <!-- Pricing -->
+    <!-- FAQ -->
+    <!-- Newsletter -->
+    <!-- Footer -->
+
   </main>
 
-  <!-- Modal -->
-  <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="profileModalLabel">Your account</h5>
+          <h5 class="modal-title" id="loginModalLabel">Log In</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <!-- Contenido del modal -->
+          <!-- Modal Content -->
           <form class="form-container">
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="youraddress@example.com">
+              <label for="inputEmailLogin">Email address</label>
+              <input type="email" class="form-control" id="inputEmailLogin" aria-describedby="emailHelp" placeholder="youraddress@example.com">
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Your Password">
+              <label for="inputPasswordLogin">Password</label>
+              <input type="password" class="form-control" id="inputPasswordLogin" placeholder="Your Password">
             </div>
             <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Remember me</label>
+              <input type="checkbox" class="form-check-input" id="checkRememberUser">
+              <label class="form-check-label" for="checkRememberUser">Remember me</label>
             </div>
           </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Log In</button>
-          <!-- Podés agregar más botones si querés -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Register Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Create an account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Modal Content -->
+          <form class="form-container">
+            <div class="form-group">
+              <label for="inputEmailRegister">Email address</label>
+              <input type="email" class="form-control" id="inputEmailRegister" aria-describedby="emailHelp" placeholder="youraddress@example.com">
+            </div>
+            <div class="form-group">
+              <label for="inputPasswordRegister">Password</label>
+              <input type="password" class="form-control" id="inputPasswordRegister" placeholder="Your Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="checkTermsService">
+              <label class="form-check-label" for="checkTermsService">I agree to the terms of service</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Register</button>
         </div>
       </div>
     </div>
